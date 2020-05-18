@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5A88DC9-011F-4BFF-A4B9-B1A06B1288F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator.cs" />
+    <Compile Include="Automobil.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrisanjePonude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrisanjePonude.Designer.cs">
+      <DependentUpon>FormBrisanjePonude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrisanjeRezervacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrisanjeRezervacije.Designer.cs">
+      <DependentUpon>FormBrisanjeRezervacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrisiAutomobil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrisiAutomobil.Designer.cs">
+      <DependentUpon>FormBrisiAutomobil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrisiKupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrisiKupca.Designer.cs">
+      <DependentUpon>FormBrisiKupca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIzmenaAuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIzmenaAuta.Designer.cs">
+      <DependentUpon>FormIzmenaAuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIzmenaKupca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIzmenaKupca.Designer.cs">
+      <DependentUpon>FormIzmenaKupca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIzmenaPonude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIzmenaPonude.Designer.cs">
+      <DependentUpon>FormIzmenaPonude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIzmenaRezervacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIzmenaRezervacije.Designer.cs">
+      <DependentUpon>FormIzmenaRezervacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNovaPonuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNovaPonuda.Designer.cs">
+      <DependentUpon>FormNovaPonuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNovaRezervacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNovaRezervacija.Designer.cs">
+      <DependentUpon>FormNovaRezervacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNoviAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNoviAdmin.Designer.cs">
+      <DependentUpon>FormNoviAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNoviAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNoviAuto.Designer.cs">
+      <DependentUpon>FormNoviAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNoviKupac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNoviKupac.Designer.cs">
+      <DependentUpon>FormNoviKupac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrikazKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrikazKorisnika.Designer.cs">
+      <DependentUpon>FormPrikazKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistracijaKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistracijaKorisnika.Designer.cs">
+      <DependentUpon>FormRegistracijaKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRezervacijaKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRezervacijaKorisnika.Designer.cs">
+      <DependentUpon>FrmRezervacijaKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="Kupac.cs" />
+    <Compile Include="Ponuda.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezervacija.cs" />
+    <Compile Include="Statistika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistika.Designer.cs">
+      <DependentUpon>Statistika.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBrisanjePonude.resx">
+      <DependentUpon>FormBrisanjePonude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBrisanjeRezervacije.resx">
+      <DependentUpon>FormBrisanjeRezervacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBrisiAutomobil.resx">
+      <DependentUpon>FormBrisiAutomobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBrisiKupca.resx">
+      <DependentUpon>FormBrisiKupca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIzmenaAuta.resx">
+      <DependentUpon>FormIzmenaAuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIzmenaKupca.resx">
+      <DependentUpon>FormIzmenaKupca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIzmenaPonude.resx">
+      <DependentUpon>FormIzmenaPonude.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIzmenaRezervacije.resx">
+      <DependentUpon>FormIzmenaRezervacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNovaPonuda.resx">
+      <DependentUpon>FormNovaPonuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNovaRezervacija.resx">
+      <DependentUpon>FormNovaRezervacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNoviAdmin.resx">
+      <DependentUpon>FormNoviAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNoviAuto.resx">
+      <DependentUpon>FormNoviAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNoviKupac.resx">
+      <DependentUpon>FormNoviKupac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrikazKorisnika.resx">
+      <DependentUpon>FormPrikazKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistracijaKorisnika.resx">
+      <DependentUpon>FormRegistracijaKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRezervacijaKorisnika.resx">
+      <DependentUpon>FrmRezervacijaKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Statistika.resx">
+      <DependentUpon>Statistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
